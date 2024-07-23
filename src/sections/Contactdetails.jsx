@@ -20,28 +20,21 @@ function ContactDetails() {
     fetchData();
   }, []);
 
-  const renderContactDetails = (startIndex, endIndex) => {
-    return contactDetails.slice(startIndex, endIndex).map((detail, index) => (
-      <div key={index} className="col text-center">
-        <img src={detail.src} alt={detail.alt} className="img-fluid" />
-        {detail.link ? (
-          <a href={detail.link} className="btn btn-link">
-            {detail.text}
-          </a>
-        ) : (
-          <span>{detail.text}</span>
-        )}
-      </div>
-    ));
-  };
-
   return (
     <div className="container text-center">
       <div className="row">
-        {renderContactDetails(0, 2)}
-      </div>
-      <div className="row">
-        {renderContactDetails(2, contactDetails.length)}
+        {contactDetails.map((detail, index) => (
+          <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+            <img src={detail.src} alt={detail.alt} className="img-fluid" />
+            {detail.link ? (
+              <a href={detail.link} className="btn btn-link">
+                {detail.text}
+              </a>
+            ) : (
+              <span>{detail.text}</span>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );

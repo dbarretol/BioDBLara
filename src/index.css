@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1;
   font-weight: 400;
-  width: 100%;
+  --base-width: 100%;
 
   color-scheme: light dark;
   color: #191919;
@@ -28,7 +28,8 @@ body {
   display: flex;
   /*place-items: center;*/
   min-width: 30%;
-  max-width: 75%;
+  max-width: 70%;
+  width: calc(var(--base-width));
 
   min-height: 100vh;
 }
@@ -65,12 +66,19 @@ div.container {
   border-radius: 15px; /* Bordes redondeados */
   padding: 20px; /* Espacio interno */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional para un efecto de profundidad */
-  margin: 10px; /* Espacio externo */
+  margin: 10px auto; /* Espacio externo */
+  width: calc(var(--base-width) - 40px);
 }
 
 div#keywords {
   font-style: italic;
   font-size: 15px ;
+}
+
+p.content {
+  text-align: left; /* Alineación del texto a la izquierda */
+  font-family: Helvetica, Arial, sans-serif; /* Tipografía */
+  font-size: 16px; /* Tamaño de la fuente */
 }
 
 button {
