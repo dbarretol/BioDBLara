@@ -53,6 +53,25 @@ h2 {
   font-weight: bold; /* Hace que el texto aparezca en negrita */
 }
 
+h3 {
+  font-family: 'Amiri', serif; /* Fuente Amiri */
+  font-weight: bold; /* Negrita */
+  font-size: 18px; /* Tamaño de la fuente */
+  text-align: left;
+}
+h4 {
+  font-family: 'Amiri', serif; /* Fuente Amiri */
+  font-style: italic;
+  font-size: 18px; /* Tamaño de la fuente */
+  text-align: left;
+}
+
+p.Dates {
+  font-family: 'Amiri', serif; /* Fuente Amiri */  
+  font-size: 14px; /* Tamaño de la fuente */
+  text-align: right;
+}
+
 hr {
   border: 0;
   height: 2px;
