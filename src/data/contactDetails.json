@@ -1,0 +1,24 @@
+[
+    {
+        "src": "./../src/assets/icons/contact/email.png",
+        "alt": "email",
+        "link": "mailto:dbarretol@outlook.com",
+        "text": "Correo electrónico"
+    },
+    {
+        "src": "./../src/assets/icons/contact/mobile.png",
+        "alt": "mobile",
+        "text": "(--- --- ---)"
+    },
+    {
+        "src": "./../src/assets/icons/contact/place.png",
+        "alt": "place",
+        "text": "Rímac, Lima, Perú"
+    },
+    {
+        "src": "./../src/assets/icons/contact/linkedin.png",
+        "alt": "linkedin",
+        "link": "https://pe.linkedin.com/in/dbarretol",
+        "text": "https://pe.linkedin.com/in/dbarretol"
+    }
+]

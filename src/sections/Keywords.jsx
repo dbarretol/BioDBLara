@@ -3,7 +3,7 @@ import React from 'react'
 function Keywords() {
   return (
     <div className="container">
-      <p>Poner los keywords aquí</p>
+      <div id="keywords"> 🔬Investigador RENACYT |👨‍💼Consultor independiente | Especialista en Patentes |⚙️Gestión e ingeniería de mantenimiento |⚡Energías Renovables |🧑‍🏫Docente Posgrado | CIP 330188 | MBA (c)</div>
     </div>
   )
 }

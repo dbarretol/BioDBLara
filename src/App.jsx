@@ -21,7 +21,6 @@ function App() {
     <>
       <Header />
       <Keywords />
-      <hr></hr>
       <Contactdetails />
       <ProfesionalProfile />
       <AcademicMain />
