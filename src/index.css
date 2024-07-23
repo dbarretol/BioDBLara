@@ -1,11 +1,11 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #191919;
+  background-color: #F4F2EE;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,14 +25,43 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  /*place-items: center;*/
+  min-width: 800px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 24px; /*3.2em*/
   line-height: 1.1;
+  font-family: Helvetica, Arial, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  text-align: left;
+  font-size: 20px ; /*2.5em*/
+  font-family: Helvetica, Arial, 'Times New Roman', Times, serif;
+  margin: 10px 0; /*Controla el espacio alrededor del elemento.*/
+  padding: 10 px; /* Controla el espacio dentro del elemento.*/
+  color: #191919; /*Define el color del texto. */
+  line-height: 1; /* Ajusta la altura de la línea para mejorar la legibilidad.*/
+  text-transform: uppercase; /*Controla la capitalización del texto.*/
+  letter-spacing: 0.05em; /*Ajusta el espacio entre caracteres*/
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: #555;
+  border-radius: 1px;
+  margin: 10px 0;
+}
+
+div.container {
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional para un efecto de profundidad */
+  margin: 10px; /* Espacio externo */
 }
 
 button {
