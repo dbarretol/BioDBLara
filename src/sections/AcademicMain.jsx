@@ -1,73 +1,67 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-
-function AcademicMain() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  return (
-    <>
-      <div className="container">
-        <h2>Formación académica </h2>
-        <hr />
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8">
-              <h3>Maestría en Administración de Negocios (MBA)</h3>
-              <h4>ESAN</h4>
+// Componente para representar un programa educativo
+function EducationalProgram({ logoSrc, altText, title, institution, dates, content }) {
+    return (
+        <div className="row">
+            {/* Logo institución */}
+            <div className="col-md-2">
+                <img
+                    src={logoSrc}
+                    alt={altText}
+                    className="img-fluid rounded-circle"
+                    style={{ width: '80px', height: '80px' }} // Ajusta el tamaño según sea necesario
+                />
             </div>
-            <div className="col-md-4">
-              <p className="Dates">2023/09 – presente</p>
+            <div className="col-md-10">
+                <div className="row">
+                    {/* Programa e institución */}
+                    <div className="col-md-8">
+                        <h3>{title}</h3>
+                        <h4>{institution}</h4>
+                    </div>
+                    {/* Fechas */}
+                    <div className="col-md-4">
+                        <p className="Dates">{dates}</p>
+                    </div>
+                </div>
+                {/* Contenido */}
+                <div className="row">
+                    <div className="col-12">
+                        <p className="content">{content}</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
-              <p className="content"><strong>Track de especialización:</strong> Finanzas corporativas.</p>
-            </div>
-          </div>
-          <button type="button" className="btn btn-primary" onClick={handleShow}>
-            Ver cursos
-          </button>
         </div>
-        <hr />
-      </div>
-
-      {/* Modal */}
-      <div className={`modal fade ${show ? 'show' : ''}`} id="academicModal" tabIndex="-1" aria-labelledby="academicModalLabel" aria-hidden={!show} style={{ display: show ? 'block' : 'none' }}>
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="academicModalLabel">Cursos en ESAN</h5>
-              <button type="button" className="btn-close" onClick={handleClose} aria-label="Close"></button>
-            </div>
-            <div className="modal-body">
-              <ul>
-                <li>Curso 1: Finanzas Avanzadas</li>
-                <li>Curso 2: Estrategia Corporativa</li>
-                <li>Curso 3: Marketing Digital</li>
-                {/* Agrega más cursos aquí */}
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      {/* End Modal */}
-
-      {/* Backdrop */}
-      {show && (
-        <div className="modal-backdrop fade show"></div>
-      )}
-      {/* End Backdrop */}
-      
-    </>
-  )
+    );
 }
 
-export default AcademicMain
+function AcademicMain() {
+    return (
+        <div className="container">
+            <h2>Formación académica</h2>
+            {/* Primer programa educativo */}
+            <EducationalProgram
+                logoSrc="./../src/assets/icons/institutions/ESAN.jpg"
+                altText="ESAN"
+                title="Programa educativo #01"
+                institution="Institución educativa #01"
+                dates="Fecha de inicio – fecha de fin"
+                content="Contenido descriptivo del programa educativo #01"
+            />
+            <hr />
+            {/* Segundo programa educativo */}
+            <EducationalProgram
+                logoSrc="./../src/assets/icons/institutions/UNI.jpg"
+                altText="UNI"
+                title="Programa educativo #02"
+                institution="Institución educativa #02"
+                dates="Fecha de inicio2 – fecha de fin2"
+                content="Contenido descriptivo del programa educativo #02"
+            />
+            <hr />
+        </div>
+    );
+}
 
-{/*        
-        <hr></hr>
-        <p>Poner la formación academica aqui</p>*/}
+export default AcademicMain;

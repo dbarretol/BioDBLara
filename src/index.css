@@ -19,12 +19,14 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
 body {
-  margin: 0 auto; /* Centra el contenido horizontalmente */
+  margin: 0 auto;
+  /* Centra el contenido horizontalmente */
   display: flex;
   /*place-items: center;*/
   min-width: 30%;
@@ -35,40 +37,57 @@ body {
 }
 
 h1 {
-  font-size: 40px; /*3.2em*/
+  font-size: 40px;
+  /*3.2em*/
   line-height: 1.5;
   font-family: Helvetica, Arial, 'Times New Roman', Times, serif;
 }
 
 h2 {
   text-align: left;
-  font-size: 20px ; /*2.5em*/
+  font-size: 20px;
+  /*2.5em*/
   font-family: Helvetica, Arial, 'Times New Roman', Times, serif;
-  margin: 10px 0; /*Controla el espacio alrededor del elemento.*/
-  padding: 10 px; /* Controla el espacio dentro del elemento.*/
-  color: #191919; /*Define el color del texto. */
-  line-height: 1; /* Ajusta la altura de la línea para mejorar la legibilidad.*/
-  text-transform: uppercase; /*Controla la capitalización del texto.*/
-  letter-spacing: 0.05em; /*Ajusta el espacio entre caracteres*/
-  font-weight: bold; /* Hace que el texto aparezca en negrita */
+  margin: 10px 0;
+  /*Controla el espacio alrededor del elemento.*/
+  padding: 10 px;
+  /* Controla el espacio dentro del elemento.*/
+  color: #191919;
+  /*Define el color del texto. */
+  line-height: 1;
+  /* Ajusta la altura de la línea para mejorar la legibilidad.*/
+  text-transform: uppercase;
+  /*Controla la capitalización del texto.*/
+  letter-spacing: 0.05em;
+  /*Ajusta el espacio entre caracteres*/
+  font-weight: bold;
+  /* Hace que el texto aparezca en negrita */
 }
 
 h3 {
-  font-family: 'Amiri', serif; /* Fuente Amiri */
-  font-weight: bold; /* Negrita */
-  font-size: 18px; /* Tamaño de la fuente */
+  font-family: 'Amiri', serif;
+  /* Fuente Amiri */
+  font-weight: bold;
+  /* Negrita */
+  font-size: 18px;
+  /* Tamaño de la fuente */
   text-align: left;
 }
+
 h4 {
-  font-family: 'Amiri', serif; /* Fuente Amiri */
+  font-family: 'Amiri', serif;
+  /* Fuente Amiri */
   font-style: italic;
-  font-size: 18px; /* Tamaño de la fuente */
+  font-size: 18px;
+  /* Tamaño de la fuente */
   text-align: left;
 }
 
 p.Dates {
-  font-family: 'Amiri', serif; /* Fuente Amiri */  
-  font-size: 14px; /* Tamaño de la fuente */
+  font-family: 'Amiri', serif;
+  /* Fuente Amiri */
+  font-size: 14px;
+  /* Tamaño de la fuente */
   text-align: right;
 }
 
@@ -81,23 +100,31 @@ hr {
 }
 
 div.container {
-  background-color: #ffffff; /* Fondo blanco */
-  border-radius: 15px; /* Bordes redondeados */
-  padding: 20px; /* Espacio interno */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional para un efecto de profundidad */
-  margin: 10px auto; /* Espacio externo */
+  background-color: #ffffff;
+  /* Fondo blanco */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  padding: 20px;
+  /* Espacio interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra opcional para un efecto de profundidad */
+  margin: 10px auto;
+  /* Espacio externo */
   width: calc(var(--base-width) - 40px);
 }
 
 div#keywords {
   font-style: italic;
-  font-size: 15px ;
+  font-size: 15px;
 }
 
 p.content {
-  text-align: left; /* Alineación del texto a la izquierda */
-  font-family: Helvetica, Arial, sans-serif; /* Tipografía */
-  font-size: 16px; /* Tamaño de la fuente */
+  text-align: left;
+  /* Alineación del texto a la izquierda */
+  font-family: Helvetica, Arial, sans-serif;
+  /* Tipografía */
+  font-size: 16px;
+  /* Tamaño de la fuente */
 }
 
 button {
@@ -111,9 +138,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -124,9 +153,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
