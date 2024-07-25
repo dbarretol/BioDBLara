@@ -12,6 +12,7 @@ import OtherActivities from './sections/OtherActivities'
 import Certifications from './sections/Certifications'
 import DigitalSkills from './sections/DigitalSkills'
 import Languages from './sections/Languages'
+import Interests from './sections/Interests'
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
       <Keywords />
       <Contactdetails />
       <ProfesionalProfile />
+      <Interests />
       <AcademicMain />
       <AcademicComplement />
       <Experience />

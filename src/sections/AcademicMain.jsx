@@ -1,6 +1,6 @@
 import React from 'react';
-import EducationalProgram from '../entries/AcademicEntry'; // Importa el componente EducationalProgram
-import educationalProgramsData from '../data/AcademicHistory.json'; // Importa los datos desde el archivo JSON
+import EducationalProgram from '../entries/AcademicEntry';
+import educationalProgramsData from '../data/AcademicHistory.json';
 
 function AcademicMain() {
     return (

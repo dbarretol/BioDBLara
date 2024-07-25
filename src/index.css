@@ -118,7 +118,8 @@ div#keywords {
   font-size: 15px;
 }
 
-p.content {
+
+.content {
   text-align: left;
   /* Alineación del texto a la izquierda */
   font-family: Helvetica, Arial, sans-serif;

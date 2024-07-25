@@ -1,0 +1,11 @@
+.Interests {
+    background-color: #f8f9fa;
+    border: 1px solid #0A66C2;
+    border-radius: 50px;
+    color: #0A66C2;
+    padding: 10px;
+    text-align: center;
+    margin: 8px; /* Ajusta el margen para reducir el espacio entre los elementos */
+    display: inline-flex; /* Cambia a inline-flex para ajustar el ancho al contenido */
+    
+}

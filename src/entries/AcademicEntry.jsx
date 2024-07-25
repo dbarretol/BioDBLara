@@ -27,7 +27,7 @@ function AcademicEntry({ logoSrc, altText, title, institution, startDate, endDat
                 {/* Contenido */}
                 <div className="row">
                     <div className="col-12">
-                        <p className="content">{content}</p>
+                        <ReactMarkdown className="content" children={content} />
                     </div>
                 </div>
             </div>
