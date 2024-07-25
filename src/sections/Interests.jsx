@@ -8,7 +8,10 @@ const intereses = [
     'React',
     'Finanzas',
     'Machine Learning',
-    'Deep Learning'
+    'Deep Learning',
+    'Docencia',
+    'Investigación',
+    'Procesos estocásticos'
 ];
 
 const Interests = () => {
