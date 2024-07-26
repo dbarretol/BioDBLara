@@ -3,8 +3,13 @@ import React from 'react'
 function Header() {
   return (
     <>
-    <h1><strong>David </strong> Barreto Lara</h1>
-    <p><strong>D. Sc., M. Eng., CAPM</strong> </p>
+      <div className="container">
+        {/*<div className="header-image">
+          <img src="./../src/assets/icons/portada/portada.jpg" alt="Portada" className="img-fluid rounded" />
+        </div>*/}
+        <h1><strong>David </strong> Barreto Lara</h1>
+        <p><strong>D. Sc., M. Eng., CAPM</strong> </p>
+      </div>
     </>
   )
 }

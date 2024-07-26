@@ -15,12 +15,12 @@ function AcademicEntry({ logoSrc, altText, title, institution, startDate, endDat
             <div className="col-md-10">
                 <div className="row">
                     {/* Programa e institución */}
-                    <div className="col-md-8">
+                    <div className="col-md-9">
                         <h3>{title}</h3>
                         <h4>{institution}</h4>
                     </div>
                     {/* Fechas */}
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <p className="Dates">{startDate} - {endDate}</p>
                     </div>
                 </div>

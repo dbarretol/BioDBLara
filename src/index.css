@@ -1,135 +1,128 @@
+/* Root variables and base styles */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1;
-  font-weight: 400;
+  --font-family-base: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-family-serif: 'Amiri', serif;
+  --color-text: #191919;
+  --color-background: #F4F2EE;
+  --color-background-light: #ffffff;
+  --color-primary: #0A66C2;
+  --color-primary-hover: #747bff;
+  --color-secondary: #646cff;
+  --color-secondary-hover: #535bf2;
   --base-width: 100%;
-
-  color-scheme: light dark;
-  color: #191919;
-  background-color: #F4F2EE;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --max-width: 90vw;
+  --min-width: 30vw;
+  --container-padding: 1.25rem;
+  --heading-font-size-large: 2.5rem; /* 40px */
+  --heading-font-size-medium: 1.25rem; /* 20px */
+  --heading-font-size-small: 1.125rem; /* 18px */
+  --paragraph-font-size-small: 0.875rem; /* 14px */
 }
 
+/* Box model reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  width: var(--base-width);
+  margin: 0 auto;
+}
+
+/* Heading styles */
+h1, h2, h3, h4 {
+  margin: 0.625rem 0; /* 10px */
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: var(--heading-font-size-large);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: var(--heading-font-size-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+h3, h4 {
+  font-family: var(--font-family-serif);
+  font-weight: bold;
+  font-size: var(--heading-font-size-small);
+  text-align: left;
+}
+
+/* Specific styles for paragraphs */
+p.Dates {
+  font-family: var(--font-family-serif);
+  font-size: var(--paragraph-font-size-small);
+  text-align: center;
+}
+
+/* Divider line */
+hr {
+  border: 0;
+  height: 0.125rem; /* 2px */
+  background-color: #555;
+  border-radius: 0.0625rem; /* 1px */
+  margin: 0.625rem 0; /* 10px */
+}
+
+/* Container styles */
+.container {
+  background-color: var(--color-background-light);
+  border-radius: 0.9375rem; /* 15px */
+  padding: var(--container-padding);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin: 0.625rem auto; /* 10px */
+  width: calc(var(--base-width) - 2.5rem); /* Adjusting for padding */
+}
+
+/* Specific styles for keywords */
+#keywords {
+  font-style: italic;
+  font-size: 0.9375rem; /* 15px */
+}
+
+/* General content styles */
+.content {
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem; /* 16px */
+}
+
+/* Link styles */
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--color-secondary);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
+  color: var(--color-secondary-hover);
 }
 
-body {
-  margin: 0 auto;
-  /* Centra el contenido horizontalmente */
-  display: flex;
-  /*place-items: center;*/
-  min-width: 30%;
-  max-width: 70%;
-  width: calc(var(--base-width));
-
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 40px;
-  /*3.2em*/
-  line-height: 1.5;
-  font-family: Helvetica, Arial, 'Times New Roman', Times, serif;
-}
-
-h2 {
-  text-align: left;
-  font-size: 20px;
-  /*2.5em*/
-  font-family: Helvetica, Arial, 'Times New Roman', Times, serif;
-  margin: 10px 0;
-  /*Controla el espacio alrededor del elemento.*/
-  padding: 10 px;
-  /* Controla el espacio dentro del elemento.*/
-  color: #191919;
-  /*Define el color del texto. */
-  line-height: 1;
-  /* Ajusta la altura de la línea para mejorar la legibilidad.*/
-  text-transform: uppercase;
-  /*Controla la capitalización del texto.*/
-  letter-spacing: 0.05em;
-  /*Ajusta el espacio entre caracteres*/
-  font-weight: bold;
-  /* Hace que el texto aparezca en negrita */
-}
-
-h3 {
-  font-family: 'Amiri', serif;
-  /* Fuente Amiri */
-  font-weight: bold;
-  /* Negrita */
-  font-size: 18px;
-  /* Tamaño de la fuente */
-  text-align: left;
-}
-
-h4 {
-  font-family: 'Amiri', serif;
-  /* Fuente Amiri */
-  font-style: italic;
-  font-size: 18px;
-  /* Tamaño de la fuente */
-  text-align: left;
-}
-
-p.Dates {
-  font-family: 'Amiri', serif;
-  /* Fuente Amiri */
-  font-size: 14px;
-  /* Tamaño de la fuente */
-  text-align: right;
-}
-
-hr {
-  border: 0;
-  height: 2px;
-  background-color: #555;
-  border-radius: 1px;
-  margin: 10px 0;
-}
-
-div.container {
-  background-color: #ffffff;
-  /* Fondo blanco */
-  border-radius: 15px;
-  /* Bordes redondeados */
-  padding: 20px;
-  /* Espacio interno */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Sombra opcional para un efecto de profundidad */
-  margin: 10px auto;
-  /* Espacio externo */
-  width: calc(var(--base-width) - 40px);
-}
-
-div#keywords {
-  font-style: italic;
-  font-size: 15px;
-}
-
-
-.content {
-  text-align: left;
-  /* Alineación del texto a la izquierda */
-  font-family: Helvetica, Arial, sans-serif;
-  /* Tipografía */
-  font-size: 16px;
-  /* Tamaño de la fuente */
-}
-
+/* Button styles */
 button {
-  border-radius: 8px;
+  border-radius: 0.5rem; /* 8px */
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -141,7 +134,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: var(--color-secondary);
 }
 
 button:focus,
@@ -149,14 +142,22 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Media query to center align h3 and h4 on smaller screens */
+@media (max-width: 48em) { /* 768px */
+  h3, h4 {
+    text-align: center;
+  }
+}
+
+/* Light theme adjustments */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: var(--color-background-light);
   }
 
   a:hover {
-    color: #747bff;
+    color: var(--color-primary-hover);
   }
 
   button {
