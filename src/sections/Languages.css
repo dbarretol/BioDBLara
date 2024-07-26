@@ -1,0 +1,39 @@
+/* styles.css o tu archivo CSS */
+.language-card {
+    border: 1px solid #ddd;
+    /* Color y grosor del borde */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    padding: 10px;
+    /* Espaciado interno */
+    margin: 0 10px;
+    /* Separación entre elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    /* Color de fondo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+.language-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Alineación centrada de los elementos */
+    gap: 15px;
+    /* Separación entre los recuadros */
+}
+
+.language-card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.language-card div {
+    font-size: 14px;
+    /* Tamaño de la fuente */
+}
