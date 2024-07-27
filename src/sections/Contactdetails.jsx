@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './css/Headings.css'
 
 function ContactDetails() {
   const [contactDetails, setContactDetails] = useState([]);

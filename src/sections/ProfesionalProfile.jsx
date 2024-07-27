@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import './css/Headings.css'
 
 function ProfesionalProfile() {
   const [expanded, setExpanded] = useState(true);

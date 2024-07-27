@@ -3,14 +3,14 @@
   --font-family-base: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-family-serif: 'Amiri', serif;
   --color-text: #191919;
-  --color-background: #F4F2EE;
+  --color-background: #163E64;
   --color-background-light: #ffffff;
   --color-primary: #0A66C2;
   --color-primary-hover: #747bff;
   --color-secondary: #646cff;
   --color-secondary-hover: #535bf2;
   --base-width: 100%;
-  --max-width: 90vw;
+  --max-width: 70vw;
   --min-width: 30vw;
   --container-padding: 1.25rem;
   --heading-font-size-large: 2.5rem; /* 40px */
@@ -45,46 +45,6 @@ body {
   margin: 0 auto;
 }
 
-/* Heading styles */
-h1, h2, h3, h4 {
-  margin: 0.625rem 0; /* 10px */
-  line-height: 1.5;
-}
-
-h1 {
-  font-size: var(--heading-font-size-large);
-  font-family: 'Times New Roman', Times, serif;
-}
-
-h2 {
-  font-size: var(--heading-font-size-medium);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: bold;
-}
-
-h3, h4 {
-  font-family: var(--font-family-serif);
-  font-weight: bold;
-  font-size: var(--heading-font-size-small);
-  text-align: left;
-}
-
-/* Specific styles for paragraphs */
-p.Dates {
-  font-family: var(--font-family-serif);
-  font-size: var(--paragraph-font-size-small);
-  text-align: center;
-}
-
-/* Divider line */
-hr {
-  border: 0;
-  height: 0.125rem; /* 2px */
-  background-color: #555;
-  border-radius: 0.0625rem; /* 1px */
-  margin: 0.625rem 0; /* 10px */
-}
 
 /* Container styles */
 .container {
@@ -96,18 +56,9 @@ hr {
   width: calc(var(--base-width) - 2.5rem); /* Adjusting for padding */
 }
 
-/* Specific styles for keywords */
-#keywords {
-  font-style: italic;
-  font-size: 0.9375rem; /* 15px */
-}
 
-/* General content styles */
-.content {
-  text-align: left;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem; /* 16px */
-}
+
+
 
 /* Link styles */
 a {
@@ -142,12 +93,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Media query to center align h3 and h4 on smaller screens */
-@media (max-width: 48em) { /* 768px */
-  h3, h4 {
-    text-align: center;
-  }
-}
+
 
 /* Light theme adjustments */
 @media (prefers-color-scheme: light) {

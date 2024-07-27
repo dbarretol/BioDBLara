@@ -1,0 +1,64 @@
+/* General styles for headings */
+body h1, body h2, body h3, body h4 {
+    margin: 0.625rem 0;    /* 10px */
+    line-height: 1.5;
+}
+
+/* Specific heading styles */
+body h1 {
+    font-size: var(--heading-font-size-large);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body h2 {
+    font-size: var(--heading-font-size-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+body h3, body h4 {
+    font-family: var(--font-family-serif);
+    font-weight: bold;
+    font-size: var(--heading-font-size-small);
+    text-align: left;
+}
+
+/* Specific styles for paragraphs */
+p.Dates {
+    font-family: var(--font-family-serif);
+    font-size: var(--paragraph-font-size-small);
+    text-align: center;
+}
+
+/* Divider line */
+body hr {
+    border: 0;
+    height: 0.125rem;     /* 2px */
+    background-color: #555;
+    border-radius: 0.0625rem;     /* 1px */
+    margin: 0.625rem 0;
+    /* 10px */
+}
+
+/* Styles for keywords */
+#keywords {
+    font-style: italic;
+    font-size: 0.9375rem;     /* 15px */
+}
+
+/* General content styles */
+.content {
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;     /* 16px */
+}
+
+/* Media query to center align h3 and h4 on smaller screens */
+@media (max-width: 48em) {
+
+    /* 768px */
+    body h3, body h4 {
+        text-align: center;
+    }
+}

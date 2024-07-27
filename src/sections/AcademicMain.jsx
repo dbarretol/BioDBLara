@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/Headings.css'
 import EducationalProgram from '../entries/AcademicEntry';
 import educationalProgramsData from '../data/AcademicHistory.json';
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import './Languages.css'
+import './css/Languages.css'
+import './css/Headings.css'
 
 // Lista de idiomas con sus respectivas imágenes y niveles
 const languages = [

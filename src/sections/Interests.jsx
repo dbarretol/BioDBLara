@@ -1,6 +1,7 @@
 // Interests.jsx
 import React from 'react';
-import './Interests.css'; // Asegúrate de que la ruta del archivo CSS sea correcta y relativa
+import './css/Headings.css'
+import './css/Interests.css'; // Asegúrate de que la ruta del archivo CSS sea correcta y relativa
 
 const intereses = [
     'Energía eólica',
