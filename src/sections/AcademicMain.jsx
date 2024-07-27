@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Headings.css'
-import EducationalProgram from '../entries/AcademicEntry';
+import EducationalProgram from '../entries/EntryTypeI';
 import educationalProgramsData from '../data/AcademicHistory.json';
 
 function AcademicMain() {

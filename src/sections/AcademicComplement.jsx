@@ -1,16 +1,28 @@
-import React from 'react'
+import React from 'react';
 import './css/Headings.css'
+import EducationalProgram from '../entries/EntryTypeI';
+import educationalProgramsData from '../data/AcademicHistoryComplementary.json';
 
-function AcademicComplement() {
-  return (
-    <>
-      <div className="container">
-        <h2>Formación complementaria </h2>
-        <hr></hr>
-        <p>Poner la formación complementaria aqui</p>
-      </div>
-    </>
-  )
+function AcademicMain() {
+    return (
+        <div className="container">
+            <h2>Formación complementaria</h2>
+            {educationalProgramsData.map((program, index) => (
+                <React.Fragment key={index}>
+                    <EducationalProgram
+                        logoSrc={program.logoSrc}
+                        altText={program.altText}
+                        title={program.title}
+                        institution={program.institution}
+                        startDate={program.startDate}
+                        endDate={program.endDate}
+                        content={program.content}
+                    />
+                    <hr />
+                </React.Fragment>
+            ))}
+        </div>
+    );
 }
 
-export default AcademicComplement
+export default AcademicMain;

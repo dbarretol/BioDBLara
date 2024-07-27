@@ -1,0 +1,47 @@
+[
+    {
+        "logoSrc": "./../src/assets/icons/institutions/URP.jpg",
+        "altText": "ESAN",
+        "title": "Programa de Especialización en Deep Learning",
+        "institution": "Universidad Ricardo Palma",
+        "startDate": "Feb/2024",
+        "endDate": "May/2024",
+        "content": "##### Módulo I: Redes neuronales y machine learning\n\n- Inteligencia artificial y machine learning\n- Redes neuronales artificiales\n- Aplicaciones de redes neuronales\n\n##### Módulo II: Deep learning y Natural Language Processing (NLP)\n\n- Fundamentos de Deep Learning\n- Aplicaciones con redes neuronales recurrentes (LSTM y GRU)\n- Aplicaciones con modelos transformers XLSTM\n- Aplicaciones con redes neuronales convolucionales\n\n##### Módulo III: Deep learning y Computer Vision\n\n- Clasificación\n- Detección de objetos\n- Segmentación\n- Detección y Reconocimiento Facial"
+    },
+    {
+        "logoSrc": "./../src/assets/icons/institutions/UNI.jpg",
+        "altText": "UNI",
+        "title": "Doctorado en Energética",
+        "institution": "Universidad Nacional de Ingeniería",
+        "startDate": "2016",
+        "endDate": "2020",
+        "content": "Graduado en el 1er puesto. Becario del gobierno peruano."
+    },
+    {
+        "logoSrc": "./../src/assets/icons/institutions/UNI.jpg",
+        "altText": "UNI",
+        "title": "Maestría en Gerencia e Ingeniería de Mantenimiento",
+        "institution": "Universidad Nacional de Ingeniería",
+        "startDate": "2013",
+        "endDate": "2015",
+        "content": "Graduado en el 1er puesto. Premio a la mejor tesis de maestría"
+    },
+    {
+        "logoSrc": "./../src/assets/icons/institutions/UNI.jpg",
+        "altText": "UNI",
+        "title": "Pregrado en Ingeniería Mecánica-eléctrica",
+        "institution": "Universidad Nacional de Ingeniería",
+        "startDate": "2016",
+        "endDate": "2021",
+        "content": "Ingeniero titulado y colegiado (CIP 330188). Graduado en el 1er puesto."
+    },
+    {
+        "logoSrc": "./../src/assets/icons/institutions/UNI.jpg",
+        "altText": "UNI",
+        "title": "Pregrado en Ingeniería Naval",
+        "institution": "Universidad Nacional de Ingeniería",
+        "startDate": "2007",
+        "endDate": "2012",
+        "content": "Graduado en el 1er puesto."
+    }
+]
